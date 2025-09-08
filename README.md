@@ -27,7 +27,7 @@ Cheeta v1.0 is implemented in C++. Before using it, please install the CUDA prog
 
 ```bash
 cheeta interChromLDr2 -file0 file0.txt -file1 file1.txt -o output.txt [-threads threads per block] [-r2_cut cutoff] [-distribution dist_file]
-
+```
 
 ### Parameters
 
