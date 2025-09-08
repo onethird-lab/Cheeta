@@ -47,16 +47,16 @@ cheeta interChromLDr2 -file0 file0.txt -file1 file1.txt -o output.txt [-threads 
 **Input File**: please see "input0.txt" and "input1.txt" for more information.
 
 1.  input0.txt:
-    ![input0.png](../fig/input0.png)
+    ![input0.png](https://www.cheeta.org.cn/fig/input0.png)
 2.  input1.txt:
-    ![input1.png](../fig/input1.png)
+    ![input1.png](https://www.cheeta.org.cn/fig/input1.png)
 
 Both input files share the same format: each row represents a sample, and each column corresponds to the genotype of an SNP (coded as 0, 1, or 2, representing genotypes AA, Aa, and aa, respectively). The input files must be pre-processed according to the reference genome prior to analysis.
 
 **Output File**: please see output.txt for more information.
 
 1.  output.txt:
-    ![output.png](../fig/output.png)
+    ![output.png](https://www.cheeta.org.cn/fig/output.png)
     
     - column 1: SNP index (column number minus one) of input chromosome 1, with counting starting from 0 (e.g., the first SNP is numbered 0 (1-1=0), the fifth SNP is numbered 4 (5-1=4));
     - column 2: SNP index of input chromosome 2;
