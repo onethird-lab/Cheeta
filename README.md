@@ -56,6 +56,7 @@ Both input files share the same format: each row represents a sample, and each c
 **Output File**: please see output.txt for more information.
 
 1.  output.txt:
+
     ![output.png](https://www.cheeta.org.cn/fig/output.png)
     
     - column 1: SNP index (column number minus one) of input chromosome 1, with counting starting from 0 (e.g., the first SNP is numbered 0 (1-1=0), the fifth SNP is numbered 4 (5-1=4));
