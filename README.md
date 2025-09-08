@@ -28,41 +28,40 @@ Cheeta v1.0 is implemented in C++. Before using it, please install the CUDA prog
 ```bash
 cheeta interChromLDr2 -file0 file0.txt -file1 file1.txt -o output.txt [-threads threads per block] [-r2_cut cutoff] [-distribution dist_file]
 
-Parameters
-cheeta: Perform interchromosomal linkage disequilibrium analysis.
 
-interChromLDr2: Computes the LD metric r² between SNP pairs from different chromosomes.
+### Parameters
 
--file0: Input genotype data for chromosome 1.
+**cheeta**: Perform interchromosomal linkage disequilibrium analysis
 
--file1: Input genotype data for chromosome 2.
+**interChromLDr2**: computes the LD metric r² between SNP pairs from different chromosomes:
 
--output: Output file for cross-chromosome SNP-pair LD results (e.g., the LD metric r²).
+- `-file0`: input genotype data for chromosome 1;
+- `-file1`: input genotype data for chromosome 2;
+- `-output`: output either all cross-chromosome SNP-pair LD results, such as the LD metric r²;
+- `-threads`: Specify the number of threads, defaulting to 256;
+- `-r2_cut`: Specify specific filtering criteria of r², default r² is 0.8;
+- `-distribution`: Specify whether to output global LD distribution statistics, default is not;
 
--threads: Specify the number of threads, defaulting to 256.
+### Input/Output Format
 
--r2_cut: Specify specific filtering criteria for r², default is 0.8.
+**Input File**: please see "input0.txt" and "input1.txt" for more information.
 
--distribution: Specify whether to output global LD distribution statistics, default is not.
-
-Input/Output Format
-Input File: Please see "input0.txt" and "input1.txt" for more information.
-
-input0.txt format:
-https://../fig/input0.png
-
-input1.txt format:
-https://../fig/input1.png
+1.  input0.txt:
+    ![input0.png](../fig/input0.png)
+2.  input1.txt:
+    ![input1.png](../fig/input1.png)
 
 Both input files share the same format: each row represents a sample, and each column corresponds to the genotype of an SNP (coded as 0, 1, or 2, representing genotypes AA, Aa, and aa, respectively). The input files must be pre-processed according to the reference genome prior to analysis.
 
-Output File: Please see output.txt for more information.
+**Output File**: please see output.txt for more information.
 
-output.txt format:
-https://../fig/output.png
+1.  output.txt:
+    ![output.png](../fig/output.png)
+    
+    - column 1: SNP index (column number minus one) of input chromosome 1, with counting starting from 0 (e.g., the first SNP is numbered 0 (1-1=0), the fifth SNP is numbered 4 (5-1=4));
+    - column 2: SNP index of input chromosome 2;
+    - column 3: the LD metric r² between SNP pairs from different chromosomes.
 
-Column 1: SNP index (column number minus one) of input chromosome 1, with counting starting from 0 (e.g., the first SNP is numbered 0 (1-1=0), the fifth SNP is numbered 4 (5-1=4)).
+---
 
-Column 2: SNP index of input chromosome 2.
 
-Column 3: The LD metric r² between SNP pairs from different chromosomes.
