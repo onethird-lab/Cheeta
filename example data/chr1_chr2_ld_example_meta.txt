@@ -1,0 +1,3 @@
+﻿10000
+15001
+F:/test_decoding/chr1_chr2_ld_parts
