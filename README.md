@@ -1,5 +1,5 @@
 # Cheeta
-GPU-Powered Fast Scanning of Interchromosomal Linkage Disequilibrium
+Cheeta 1.0 is a command-line based, GPU-accelerated parallel computing software designed for ultra-large scale linkage disequilibrium (LD) analysis.  It efficently processes genotype data and computes the LD metric r² and D' using the classic haplotype frequency estimation method .
 
 
 ## Welcome to Cheeta v1.0!
